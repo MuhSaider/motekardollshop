@@ -1,0 +1,969 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motekardoll - Boneka Kustom Premium</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Favicon PNG untuk browser modern -->
+    <link rel="icon" type="img/png" href="/img/boneka_wisuda2.jpg">
+
+    <!-- Ukuran yang berbeda untuk berbagai perangkat -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/boneka_wisuda2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/boneka_wisuda2.jpg">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                Motekardoll
+            </div>
+            <nav id="nav-menu">
+                <a href="#hero">Home</a>
+                <a href="#about">Tentang Kami</a>
+                <a href="#products">Produk</a>
+                <a href="#order">Cara Pesan</a>
+                <a href="#testimonials">Testimoni</a>
+                <a href="#contact">Kontak</a>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h1>Boneka Kustom Premium</h1>
+        <p>Desain sesuai keinginanmu. Handmade, unik, dan berkualitas tinggi.</p>
+        <div>
+            <a href="#products" class="btn">Lihat Katalog</a>
+        </div>
+        <img src="img/gambar_utama.jpg" alt="Boneka Kustom Motekardoll">
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>Tentang Kami</h2>
+            <p class="section-intro">Motekardoll adalah UMKM kreatif di bidang pembuatan boneka kustom yang berlokasi di
+                Bandung. Kami menawarkan layanan personalisasi penuh untuk setiap boneka.</p>
+            <div class="grid">
+                <div class="feature-card">
+                    <i class="fas fa-palette"></i>
+                    <h3>Personalisasi Full</h3>
+                    <p>Kamu bisa menentukan desain, warna, dan aksesoris sesuai keinginanmu</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-gem"></i>
+                    <h3>Bahan Premium</h3>
+                    <p>Menggunakan bahan berkualitas tinggi yang aman dan nyaman</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-comments"></i>
+                    <h3>Konsultasi Gratis</h3>
+                    <p>Tim kami siap membantu mewujudkan boneka impianmu</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h3>Pengiriman Aman</h3>
+                    <p>Packing aman dan pengiriman terpercaya ke seluruh Indonesia</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products">
+        <div class="container">
+            <h2>Produk Kami</h2>
+            <p class="section-intro">Lihat berbagai pilihan boneka kustom yang telah kami buat. Klik pada gambar untuk
+                melihat detailnya.</p>
+            <div class="grid">
+                <div class="card product-card">
+                    <div class="product-badge">Sering Dipesan</div>
+                    <img src="img/boneka_wisuda.jpg" alt="Boneka Wisuda" class="product-img">
+                    <h3>Boneka Wisuda</h3>
+                    <p>Boneka karakter Wisuda dengan detail tinggi dan kualitas premium Bebas Custom</p>
+                    <div class="price">konsultasikan Harga </div>
+                    <a href="#formpemesanan" class="btn order-btn" data-product="Boneka Wisuda">Pesan Sekarang</a>
+                    <div style="z-index: -1;" class="product-overlay">
+                    </div>
+                </div>
+                <div class="card product-card">
+                    <div class="product-badge">New</div>
+                    <img src="img/boneka_rusa.jpg" alt="Boneka Rusa" class="product-img">
+                    <h3>Boneka Rusa</h3>
+                    <p>Boneka Rusa lucu dengan desain kustom sesuai permintaan Bebas Custom</p>
+                    <div class="price">Konsultasikan Harga</div>
+                    <a href="#formpemesanan" class="btn order-btn" data-product="Boneka Rusa">Pesan Sekarang</a>
+                    <div style="z-index: -1;" class="product-overlay">
+                    </div>
+                </div>
+                <div class="card product-card">
+                    <img src="img/boneka_beruang.jpg" alt="Boneka Beruang" class="product-img">
+                    <h3>Boneka Beruang</h3>
+                    <p>Boneka Beruang yang sempurna untuk hadiah spesial Bebas Custom</p>
+                    <div class="price">Bebas Custom</div>
+                    <a href="#formpemesanan" class="btn order-btn" data-product="Boneka Beruang">Pesan Sekarang</a>
+                    <div style="z-index: -1;" class="product-overlay">
+                    </div>
+                </div>
+                <div class="card product-card">
+                    <div class="product-badge">Sering dipesan</div>
+                    <img src="img/boneka_wisuda2.jpg" alt="Boneka Wisuda Custom" class="product-img">
+                    <h3>Boneka Wisuda Custom</h3>
+                    <p>Boneka Wisuda Keren kesayanganmu</p>
+                    <div class="price">Bebas Custom</div>
+                    <a href="#formpemesanan" class="btn order-btn" data-product="Boneka Peliharaan">Pesan Sekarang</a>
+                    <div style="z-index: -1;" class="product-overlay">
+                    </div>
+                </div>
+                <div class="card product-card">
+                    <img src="img/boneka_karakter.jpg" alt="Boneka Karakter" class="product-img">
+                    <h3>Boneka Karakter</h3>
+                    <p>Boneka karakter dengan detail yang menakjubkan</p>
+                    <div class="price">Bebas Custom</div>
+                    <a href="#formpemesanan" class="btn order-btn" data-product="Boneka Fantasi">Pesan Sekarang</a>
+                    <div style="z-index: -1;" class="product-overlay">
+                    </div>
+                </div>
+                <div class="card product-card">
+                    <img src="img/boneka_karakter2.jpg" alt="Boneka Bayi" class="product-img">
+                    <h3>Boneka custom</h3>
+                    <p>Boneka aman untuk bayi dan desain yang sangat lucu dan Imut</p>
+                    <div class="price">Bebas Custom</div>
+                    <a href="#formpemesanan" class="btn order-btn" data-product="Boneka Bayi">Pesan Sekarang</a>
+                    <div style="z-index: -1;" class="product-overlay">
+                    </div>
+                </div>
+            </div>
+            <a href="product/" class="btn-elegant">Lihan Produk Selengkapnya</a>
+        </div>
+    </section>
+
+
+    <!-- Order Process -->
+    <section id="order">
+        <div class="container">
+            <h2>Cara Pemesanan</h2>
+            <p class="section-intro">Proses pemesanan yang mudah dan transparan. Kami akan memandu kamu setiap
+                langkahnya.</p>
+
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Pilih / Konsultasi Desain</h3>
+                        <p>Pilih dari katalog kami atau konsultasikan desain boneka impianmu dengan tim kami.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Produksi & Revisi</h3>
+                        <p>Tim kami akan memproduksi boneka sesuai desain. Kami menyediakan revisi Desain.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Quality Check</h3>
+                        <p>Setiap boneka melalui proses quality control ketat untuk memastikan kualitas terbaik.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Pengiriman</h3>
+                        <p>Boneka dikemas dengan aman dan dikirim dengan tracking real-time untuk memantau pengiriman
+                            dari jasa Pengiriman.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials">
+        <div class="container">
+            <h2>Apa Kata Pelanggan Kami</h2>
+            <p class="section-intro">Kepuasan pelanggan adalah prioritas kami. Lihat apa yang mereka katakan tentang
+                boneka kustom dari Motekardoll.</p>
+
+            <div class="grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">Saya sangat puas dengan boneka kustom yang saya pesan! Detailnya sangat
+                        bagus dan persis seperti yang saya inginkan. Proses pemesanannya juga mudah dan timnya sangat
+                        responsif.</p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Rina S.</h4>
+                            <p>Jakarta</p>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">Boneka couple yang saya pesan untuk anniversary sangat sempurna! Pacar
+                        saya sangat menyukainya. Kualitas bahannya sangat bagus dan jahitannya rapi. Recommended!</p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Budi P.</h4>
+                            <p>Bandung</p>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">Saya memesan boneka replika hewan peliharaan saya yang sudah meninggal.
+                        Hasilnya sangat mirip dan membantu saya mengenangnya. Terima kasih Motekardoll!</p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Maya L.</h4>
+                            <p>Surabaya</p>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <div class="container">
+            <h2>Pertanyaan Yang Sering Ditanyakan</h2>
+            <p class="section-intro">Pertanyaan yang sering diajukan tentang boneka kustom kami. Jika Anda tidak
+                menemukan jawaban yang Anda cari, jangan ragu untuk menghubungi kami.</p>
+
+            <div class="faq-container">
+                <div class="faq-category">
+                    <h3><i class="fas fa-shopping-bag"></i> Pemesanan & Harga</h3>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Berapa harga boneka kustom di Motekardoll?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Harga boneka kustom kami tergantung pada ukuran, tingkat kesulitan
+                                desain, dan bahan yang digunakan. Boneka ukuran kecil biasanya lebih murah,
+                                sementara boneka ukuran besar dengan detail kompleks bisa konsultasi gratis dengan tim
+                                kami.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Bagaimana cara memesan boneka kustom?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Cara pemesanan sangat mudah:</p>
+                            <ol>
+                                <li>Pelanggan Memilih karakter atau tema boneka melalui katalog Online Atau Konsultasi
+                                <li>
+                                <li>Tim Desain membuat sketsa/mockup boneka dan meminta persetujuan pelanggan </li>
+                                <li>Tim Produksi membuat boneka sesuai Spesifikasi</li>
+                                <li>Produk diperiksa kualitasnya, dikemas, dan dikirim ke pelanggan</li>
+                                <li>Pelanggan Memberikan feedback untuk kepuasan Maksimal</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Apakah ada biaya tambahan untuk revisi desain?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Pelanggan dapat meminta revisi Gratis sebelum produksi</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Apakah menerima pesanan dalam jumlah besar (bulk order)?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Ya, kami menerima pesanan dalam jumlah besar untuk acara perusahaan, hadiah, atau
+                                merchandise. Untuk pesanan lebih dari 50 boneka, kami menawarkan harga khusus. Silakan
+                                hubungi kami langsung untuk diskusi lebih lanjut tentang kebutuhan bulk order Anda.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-category">
+                    <h3><i class="fas fa-ruler"></i> Kustomisasi & Desain</h3>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Apa saja yang bisa dikustomisasi pada boneka?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Hampir semua aspek boneka bisa dikustomisasi:</p>
+                            <ul>
+                                <li>Desain wajah dan ekspresi</li>
+                                <li>Warna dan jenis bahan</li>
+                                <li>Pakaian dan aksesoris</li>
+                                <li>Tambahan nama atau pesan khusus</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Bisakah saya membuat boneka dari foto hewan peliharaan saya?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Tentu saja! Kami spesialis dalam membuat boneka replika hewan peliharaan. Kirimkan foto
+                                yang jelas dari berbagai sudut, dan kami akan membuat boneka yang mirip dengan hewan
+                                peliharaan Anda. Ini adalah hadiah yang sangat berharga, terutama untuk mengenang hewan
+                                peliharaan yang sudah tidak ada.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="faq-category">
+                    <h3><i class="fas fa-truck"></i> Pengiriman & Pengembalian</h3>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Apakah Anda mengirim ke seluruh Indonesia?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Ya, kami mengirim ke seluruh Indonesia melalui berbagai ekspedisi terpercaya (JNE, TIKI,
+                                POS Indonesia, dll). Biaya pengiriman bervariasi tergantung lokasi dan ukuran boneka.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Bagaimana boneka dikemas untuk pengiriman?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Kami menggunakan kemasan yang sangat aman untuk melindungi boneka selama pengiriman:</p>
+                            <ul>
+                                <li>Bubble wrap tebal untuk melindungi dari benturan</li>
+                                <li>Kardus ekstra kuat</li>
+                                <li>Penutup waterproof untuk melindungi dari air</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="faq-category">
+                    <h3><i class="fas fa-heart"></i>Material</h3>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Bahan apa yang digunakan untuk boneka?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Menggunakan kain flanel, katun, velvet, dan bahan lainnya yang aman, nyaman, serta tahan
+                                lama.</p>
+                            <p>Semua bahan kami pilih dengan hati-hati untuk memastikan kualitas dan keamanan.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Bagaimana cara merawat boneka kustom?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Untuk menjaga boneka tetap awet:</p>
+                            <ul>
+                                <li>Cuci dengan tangan menggunakan air dingin dan deterjen lembut</li>
+                                <li>Jangan gunakan pemutih atau pemutih kain</li>
+                                <li>Jemur di tempat teduh, jangan langsung di bawah matahari</li>
+                                <li>Setrika dengan suhu rendah jika perlu</li>
+                                <li>Hindari kontak dengan benda tajam atau api</li>
+                                <li>Untuk boneka dengan aksesoris elektronik, lepas sebelum mencuci</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Apakah boneka aman untuk anak-anak?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Ya, semua boneka kami dirancang dengan mempertimbangkan keamanan anak-anak. Kami
+                                menggunakan bahan bebas dari bahan berbahaya, dan tidak ada bagian kecil
+                                yang bisa terlepas dan menyebabkan tersedak. Untuk boneka khusus bayi (di bawah 3
+                                tahun), kami menggunakan desain khusus tanpa aksesoris kecil dan jahitan ekstra kuat.
+                                Informasikan jika boneka akan digunakan untuk anak kecil agar kami bisa menyesuaikan
+                                desain.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-contact">
+                <h3>Masih punya pertanyaan?</h3>
+                <p>Jika Anda tidak menemukan jawaban yang Anda cari, jangan ragu untuk menghubungi kami langsung. Tim
+                    kami siap membantu Anda!</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <script> // FAQ Accordion
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const faqItems = document.querySelectorAll('.faq-item');
+
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+
+                question.addEventListener('click', () => {
+                    // Toggle active class on clicked item
+                    item.classList.toggle('active');
+
+                    // Close all other items in the same category
+                    const siblings = Array.from(item.parentNode.children).filter(child => child !== item);
+
+                    siblings.forEach(sibling => {
+                        sibling.classList.remove('active');
+                    }
+
+                    );
+                }
+
+                );
+            }
+
+            );
+        }
+
+        );
+    </script>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Kontak Kami</h2>
+            <p class="section-intro">Ada pertanyaan atau siap memesan boneka impianmu? Hubungi kami melalui informasi di
+                bawah ini atau isi formulir pesanan.</p>
+
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Alamat</h3>
+                    <p>Jl. Sukamulya Indah 7, Gg. Sukaresik VI no. 9, Kel. Sukagalih, Kec. Sukajadi, Kota Bandung-Jawa
+                        Barat</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <h3>Telepon</h3>
+                    <p>087824438836</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <h3>WhatsApp</h3>
+                    <a target="_blank" href="https://wa.me/6287824438836" class="btn">Chat via WhatsApp</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-instagram"></i>
+                    <h3>Instagram</h3>
+                    <p>@motekar_doll</p>
+                    <a target="_blank" href="https://instagram.com/motekar_doll" class="btn">Kunjungi Instagram</a>
+                </div>
+            </div>
+
+            <div id="formpemesanan" class="contact-form">
+                <h3>Formulir Pemesanan</h3>
+                <form id="order-form">
+                    <div class="form-group">
+                        <label for="name">Nama Lengkap</label>
+                        <input type="text" id="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="product">Produk yang Dipesan</label>
+                        <select id="product" class="form-control" required>
+                            <option value="">-- Pilih Produk --</option>
+                            <option value="Boneka Anime A">Boneka Anime</option>
+                            <option value="Boneka Chibi B">Boneka Wisuda</option>
+                            <option value="Boneka Couple C">Boneka Karakter</option>
+                            <option value="Boneka Peliharaan">Boneka Peliharaan</option>
+                            <option value="Boneka Fantasi">Boneka Fantasi</option>
+                            <option value="Boneka Bayi">Boneka Bayi</option>
+                            <option value="Kustom">Kustom (Lainnya)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Detail Pesanan</label>
+                        <textarea id="message" class="form-control" rows="4"
+                            placeholder="Jelaskan detail boneka yang kamu inginkan (warna, ukuran, desain, dll)"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Kirim Pesanan via WhatsApp</button>
+                </form>
+            </div>
+
+            <script>
+                // Order Form WhatsApp Integration
+                document.getElementById('order-form').addEventListener('submit', function (e) {
+                    e.preventDefault();
+
+                    // Get form values
+                    const name = document.getElementById('name').value;
+                    const product = document.getElementById('product').value;
+                    const message = document.getElementById('message').value;
+
+                    // Store WhatsApp number (replace with your actual number)
+                    const storeWhatsApp = '6287824438836';
+
+                    // Create WhatsApp message
+                    let whatsappMessage = `Halo Motekardoll, saya ingin melakukan pemesanan boneka.%0A%0A`;
+                    whatsappMessage += `*Nama:* ${name}%0A`;
+                    whatsappMessage += `*Produk yang Dipesan:* ${product}%0A`;
+
+                    if (message) {
+                        whatsappMessage += `*Detail Pesanan:* ${message}%0A`;
+                    }
+
+                    whatsappMessage += `%0ATerima kasih.`;
+
+                    // Create WhatsApp URL
+                    const whatsappURL = `https://wa.me/${storeWhatsApp}?text=${whatsappMessage}`;
+
+                    // Open WhatsApp in new tab
+                    window.open(whatsappURL, '_blank');
+
+                    // Optional: Show success message
+                    const successMessage = document.createElement('div');
+                    successMessage.className = 'alert alert-success';
+                    successMessage.style.padding = '15px';
+                    successMessage.style.backgroundColor = '#d4edda';
+                    successMessage.style.color = '#155724';
+                    successMessage.style.borderRadius = '5px';
+                    successMessage.style.marginTop = '20px';
+                    successMessage.textContent = 'Mengarahkan Anda ke WhatsApp...';
+
+                    // Clear previous success messages
+                    const existingAlert = document.querySelector('.alert-success');
+                    if (existingAlert) {
+                        existingAlert.remove();
+                    }
+
+                    // Add success message
+                    this.appendChild(successMessage);
+
+                    // Remove success message after 3 seconds
+                    setTimeout(() => {
+                        successMessage.remove();
+                    }, 3000);
+                });
+            </script>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Motekardoll</h3>
+                    <p>UMKM kreatif di bidang pembuatan boneka kustom premium dengan kualitas terbaik dan desain sesuai
+                        keinginanmu.</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com/motekar_doll"><i class="fab fa-instagram"></i></a>
+                        <a target="_blank"
+                            href="https://api.whatsapp.com/send/?phone=6287824438836&text&type=phone_number&app_absent=0"><i
+                                class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Menu Cepat</h3>
+                    <ul>
+                        <li><a href="#about">Tentang Kami</a></li>
+                        <li><a href="#products">Produk</a></li>
+                        <li><a href="#order">Cara Pesan</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Info Kontak</h3>
+                    <p><i class="fas fa-map-marker-alt"></i>Jl. Sukamulya Indah 7, Gg. Sukaresik VI no. 9, Kel.
+                        Sukagalih, Kec. Sukajadi, Kota Bandung-Jawa Barat</p>
+                    <p><i class="fas fa-phone"></i> 087824438836</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Motekardoll. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <div class="lightbox-content">
+            <img class="lightbox-img" src="" alt="">
+            <div class="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget">
+        <div class="chat-box" id="chat-box">
+            <div class="chat-header">
+                <h3>Chat dengan Motekardoll</h3>
+                <span class="chat-close">&times;</span>
+            </div>
+            <div class="chat-body" id="chat-body">
+                <div class="chat-message bot">
+                    <div class="message-bubble">Halo! Selamat datang di Motekardoll. Ada yang bisa kami bantu?</div>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="chat-input" placeholder="Ketik pesan...">
+                <button id="chat-send"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile Navigation Toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+
+            // Animate hamburger menu
+            hamburger.classList.toggle('active');
+        });
+
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 70,
+                        behavior: 'smooth'
+                    });
+
+                    // Close mobile menu if open
+                    navMenu.classList.remove('active');
+                }
+            });
+        });
+
+        // Countdown Timer
+        function updateCountdown() {
+            const countdownElement = document.getElementById('countdown');
+            const endDate = new Date();
+            endDate.setDate(endDate.getDate() + 3); // 3 days from now
+
+            const now = new Date();
+            const timeLeft = endDate - now;
+
+            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+            countdownElement.textContent = `${days} hari ${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        // Customizer Tabs
+        const tabButtons = document.querySelectorAll('.tab-btn');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const tabId = button.getAttribute('data-tab');
+
+                // Remove active class from all buttons and contents
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                tabContents.forEach(content => content.classList.remove('active'));
+
+                // Add active class to clicked button and corresponding content
+                button.classList.add('active');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+
+        // Customizer Options
+        const optionCards = document.querySelectorAll('.option-card');
+
+        optionCards.forEach(card => {
+            card.addEventListener('click', () => {
+                // For radio button behavior (select one in each category)
+                const parent = card.parentElement;
+                const siblings = parent.querySelectorAll('.option-card');
+
+                // Check if this is a multi-select category (accessories)
+                if (parent.parentElement.id === 'accessories') {
+                    // Toggle selection for accessories
+                    card.classList.toggle('selected');
+                } else {
+                    // Radio button behavior for other categories
+                    siblings.forEach(sibling => sibling.classList.remove('selected'));
+                    card.classList.add('selected');
+                }
+
+                // Update preview and price
+                updateCustomizerPreview();
+            });
+        });
+
+        // Update Customizer Preview
+        function updateCustomizerPreview() {
+            const previewImage = document.getElementById('preview-image');
+            const customPrice = document.getElementById('custom-price');
+
+            // Get selected options
+            const selectedModel = document.querySelector('#model .option-card.selected').getAttribute('data-option');
+            const selectedSize = document.querySelector('#size .option-card.selected').getAttribute('data-option');
+            const selectedColor = document.querySelector('#color .option-card.selected').getAttribute('data-option');
+            const selectedPackaging = document.querySelector('#packaging .option-card.selected').getAttribute('data-option');
+
+            // Update preview image (in a real app, this would be a more complex logic)
+            previewImage.src = `https://picsum.photos/seed/${selectedModel}${selectedSize}${selectedColor}/400/300.jpg`;
+
+            // Calculate price (simplified logic)
+            let basePrice = 250000;
+
+            // Adjust price based on size
+            if (selectedSize === 'small') basePrice -= 50000;
+            else if (selectedSize === 'large') basePrice += 100000;
+            else if (selectedSize === 'xlarge') basePrice += 200000;
+
+            // Adjust price based on packaging
+            if (selectedPackaging === 'gift') basePrice += 30000;
+            else if (selectedPackaging === 'premium') basePrice += 50000;
+            else if (selectedPackaging === 'custom') basePrice += 70000;
+
+            // Format price
+            customPrice.textContent = `Rp ${basePrice.toLocaleString('id-ID')}`;
+        }
+
+        // Initialize customizer preview
+        updateCustomizerPreview();
+
+        // Product Lightbox
+        const productImages = document.querySelectorAll('.product-img');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.querySelector('.lightbox-img');
+        const lightboxCaption = document.querySelector('.lightbox-caption');
+        const lightboxClose = document.querySelector('.lightbox-close');
+
+        productImages.forEach(img => {
+            img.addEventListener('click', () => {
+                const card = img.closest('.card');
+                const title = card.querySelector('h3').textContent;
+                const description = card.querySelector('p').textContent;
+
+                lightboxImg.src = img.src.replace('400/300', '800/600');
+                lightboxCaption.innerHTML = `<h3>${title}</h3><p>${description}</p>`;
+                lightbox.style.display = 'block';
+            });
+        });
+
+        lightboxClose.addEventListener('click', () => {
+            lightbox.style.display = 'none';
+        });
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.style.display = 'none';
+            }
+        });
+
+        // Order Button
+        const orderButtons = document.querySelectorAll('.order-btn');
+        const productSelect = document.getElementById('product');
+
+        orderButtons.forEach(button => {
+            button.addEventListener('click', (e) => {
+                e.preventDefault();
+                const productName = button.getAttribute('data-product');
+                productSelect.value = productName;
+
+                // Scroll to contact form
+                document.getElementById('contact').scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Order Form
+        const orderForm = document.getElementById('order-form');
+
+        orderForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const product = document.getElementById('product').value;
+            const message = document.getElementById('message').value;
+
+            // In a real app, you would send this data to a server
+            // For demo purposes, we'll show a success message
+            const successMessage = document.createElement('div');
+            successMessage.className = 'alert alert-success';
+            successMessage.style.padding = '15px';
+            successMessage.style.backgroundColor = '#d4edda';
+            successMessage.style.color = '#155724';
+            successMessage.style.borderRadius = '5px';
+            successMessage.style.marginTop = '20px';
+            successMessage.textContent = `Terima kasih, ${name}! Pesanan Anda untuk "${product}" telah kami terima. Kami akan menghubungi Anda melalui WhatsApp di ${phone} segera.`;
+
+            orderForm.appendChild(successMessage);
+
+            // Reset form
+            orderForm.reset();
+
+            // Remove success message after 5 seconds
+            setTimeout(() => {
+                successMessage.remove();
+            }, 5000);
+        });
+
+        // Chat Widget
+        const chatButton = document.getElementById('chat-button');
+        const chatBox = document.getElementById('chat-box');
+        const chatClose = document.querySelector('.chat-close');
+        const chatInput = document.getElementById('chat-input');
+        const chatSend = document.getElementById('chat-send');
+        const chatBody = document.getElementById('chat-body');
+
+        chatButton.addEventListener('click', () => {
+            chatBox.style.display = chatBox.style.display === 'flex' ? 'none' : 'flex';
+        });
+
+        chatClose.addEventListener('click', () => {
+            chatBox.style.display = 'none';
+        });
+
+        function sendMessage() {
+            const message = chatInput.value.trim();
+            if (message) {
+                // Add user message
+                const userMessage = document.createElement('div');
+                userMessage.className = 'chat-message user';
+                userMessage.innerHTML = `<div class="message-bubble">${message}</div>`;
+                chatBody.appendChild(userMessage);
+
+                // Clear input
+                chatInput.value = '';
+
+                // Simulate bot response
+                setTimeout(() => {
+                    const botMessage = document.createElement('div');
+                    botMessage.className = 'chat-message bot';
+
+                    // Simple response logic
+                    let response = 'Terima kasih atas pesan Anda. Tim kami akan segera merespons.';
+
+                    if (message.toLowerCase().includes('harga')) {
+                        response = 'Harga boneka kustom kami mulai dari Rp 250.000 tergantung ukuran dan tingkat kesulitan desain. Untuk informasi lebih lanjut, silakan lihat halaman produk kami.';
+                    } else if (message.toLowerCase().includes('waktu') || message.toLowerCase().includes('lama')) {
+                        response = 'Waktu pengerjaan boneka kustom biasanya 5-14 hari kerja tergantung kompleksitas desain dan jumlah pesanan.';
+                    } else if (message.toLowerCase().includes('pesan') || message.toLowerCase().includes('order')) {
+                        response = 'Untuk pemesanan, Anda bisa mengisi formulir di halaman kontak atau langsung menghubungi kami via WhatsApp di 0812-XXXX-XXXX.';
+                    }
+
+                    botMessage.innerHTML = `<div class="message-bubble">${response}</div>`;
+                    chatBody.appendChild(botMessage);
+
+                    // Scroll to bottom
+                    chatBody.scrollTop = chatBody.scrollHeight;
+                }, 1000);
+
+                // Scroll to bottom
+                chatBody.scrollTop = chatBody.scrollHeight;
+            }
+        }
+
+        chatSend.addEventListener('click', sendMessage);
+
+        chatInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
+            } else {
+                header.style.boxShadow = '0 2px 5px rgba(0,0,0,0.1)';
+            }
+        });
+
+        // Animate on scroll
+        const animateOnScroll = () => {
+            const elements = document.querySelectorAll('.card, .feature-card, .process-step, .testimonial-card');
+
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        };
+
+        // Initial setup for animation
+        document.querySelectorAll('.card, .feature-card, .process-step, .testimonial-card').forEach(element => {
+            element.style.opacity = '0';
+            element.style.transform = 'translateY(20px)';
+            element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        });
+
+        window.addEventListener('scroll', animateOnScroll);
+        animateOnScroll(); // Initial check
+    </script>
+</body>
+
+</html>
